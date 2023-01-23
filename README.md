@@ -1,5 +1,5 @@
 # bitcrypt
-Encryption that hides text in pictures 
+Encryption hides text in bitmap pictures 
 
 Bitcrypt is easy to use. There are only two objectives. The first is to put some text into a picture. The second is to retrieve it. Thus, to operate the program, one needs a picture, some text to be encoded, and an encryption key. The steps are as follows:
 
