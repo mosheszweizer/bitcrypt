@@ -10,50 +10,14 @@ icon: snap/gui/bitcrypticon.png
 license: MIT
 title: BitCrypt
 
+
+apps:
+  bitcrypt:
+        command: bin/bitcrypt
+  
+
 parts:
-  desktop:
-    plugin: nil
-  gtk2:
-    source: .
-    source-subdir: gtk
-    plugin: make
-    make-parameters: ["FLAVOR=gtk2"]
-    build-packages:
-      - libgtk2.0-dev
-    stage-packages:
-      - libxkbcommon0  # XKB_CONFIG_ROOT
-      - ttf-ubuntu-font-family
-      - dmz-cursor-theme
-      - light-themes
-      - adwaita-icon-theme
-      - gnome-themes-standard
-      - shared-mime-info
-      - libgtk2.0-0
-      - libgdk-pixbuf2.0-0
-      - libglib2.0-bin
-      - libgtk2.0-bin
-      - unity-gtk2-module
-      - libappindicator1
-      - locales-all
-      - ibus-gtk
-      - libibus-1.0-5
-      
-plugs:
-  gtk-2-engines:
-    interface: content
-    target: $SNAP/lib/gtk-2.0
-    default-provider: gtk2-common-themes
-  gtk-2-themes:
-    interface: content
-    target: $SNAP/data-dir/themes
-    default-provider: gtk-common-themes
-  icon-themes:
-    interface: content
-    target: $SNAP/data-dir/icons
-    default-provider: gtk-common-themes
-  sound-themes:
-    interface: content
-    target: $SNAP/data-dir/sounds
-    default-provider: gtk-common-themes
-      
-      
+  bitcrypt:
+    source:
+      - on amd64: bitcrypt
+      - on i386: bitcrypt
