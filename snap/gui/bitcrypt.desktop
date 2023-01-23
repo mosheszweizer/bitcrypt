@@ -1,2 +1,10 @@
-Exec=bitcrypt
-Icon=${SNAP}/meta/gui/bitcrypt.png
+[Desktop Entry]
+Type=Application
+Name=bitcrypt
+GenericName=bitcrypt
+Comment=Encryption that hides text in pictures 
+Icon=bitcrypt.png
+Exec=/usr/local/bin/bitcrypt
+Terminal=false
+Categories=Utility;TextEditor;
+Keywords=Encryption
