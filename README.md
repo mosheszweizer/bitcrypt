@@ -25,6 +25,13 @@ c) The Rijndael cipher enlarges text. Therefore, you may need a larger image to 
 BitCrypt is written in Pascal and the file stored here was compiled on an AMD® Ryzen processor running Ubuntu 20.04.5 LTS.
 You can download the file and test if it runs on your Linux installation.
 
+-----------------------------------
+Files:
+There are two versions of the program in this repository
+Bitcrypt_install.tar.gz - a Linux version of the program
+BitCrypt_Setup.zip - a Windows version of the program
+
+-----------------------------------
 INSTALL
 Bitcrypt has been compiled with FPC compiler which staticly links all dependancies. Therefore one should not need to import any additional components to run bitcrypt. 
 
